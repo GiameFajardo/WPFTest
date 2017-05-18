@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Chu\Documents\visual studio 2015\Projects\Mivi\Mivi\obj\Debug\
+C:\Users\Chu\Source\Repos\WPFTest\Mivi\obj\Debug\
 Mivi
 none
 false
 DEBUG;TRACE
-C:\Users\Chu\Documents\visual studio 2015\Projects\Mivi\Mivi\App.xaml
-5-1273423096
+C:\Users\Chu\Source\Repos\WPFTest\Mivi\App.xaml
+6-339413103
 2-1663116858
-37-73274590
-871283642302
-Views\DepartmentsView.xaml;Views\InstructorView.xaml;Views\MainWindow.xaml;Views\CoursesView.xaml;Views\StudentsView.xaml;
+38-1985943867
+87-1987875146
+Views\DepartmentsView.xaml;Views\InstructorView.xaml;Views\MainWindow.xaml;Views\CoursesView.xaml;Views\StudentsView.xaml;Views\UserControl1.xaml;
 
-True
+False
 

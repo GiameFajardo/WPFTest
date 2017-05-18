@@ -61,3 +61,6 @@ C:\Users\Chu\documents\visual studio 2015\Projects\Mivi\Mivi\obj\Debug\Mivi.Prop
 C:\Users\Chu\documents\visual studio 2015\Projects\Mivi\Mivi\obj\Debug\WPFTest.csproj.GenerateResource.Cache
 C:\Users\Chu\documents\visual studio 2015\Projects\Mivi\Mivi\obj\Debug\Mivi.exe
 C:\Users\Chu\documents\visual studio 2015\Projects\Mivi\Mivi\obj\Debug\Mivi.pdb
+C:\Users\Chu\Source\Repos\WPFTest\Mivi\bin\Debug\Mivi.exe.config
+C:\Users\Chu\Source\Repos\WPFTest\Mivi\obj\Debug\Mivi.exe
+C:\Users\Chu\Source\Repos\WPFTest\Mivi\obj\Debug\Mivi.pdb
