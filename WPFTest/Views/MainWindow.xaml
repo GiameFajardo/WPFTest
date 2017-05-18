@@ -1,0 +1,115 @@
+﻿<Window x:Class="Mivi.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mivi"
+        mc:Ignorable="d"
+        Title="Test" Height="400" Width="725"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        xmlns:views="clr-namespace:Mivi.Views">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Orientation="Horizontal" Background="Black">
+            <TextBlock FontSize="30" Text="Test" FontWeight="Heavy" Foreground="Snow"/>
+        </StackPanel>
+        <Grid Grid.Row="1" Background="WhiteSmoke">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="243*"/>
+                <ColumnDefinition Width="0"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Orientation="Vertical" Background="DimGray">
+                <Grid Height="30">
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Rectangle Fill="GreenYellow" Width="30"/>
+                    <Button Grid.Column="1" Padding="10,0"
+                                              FontWeight="Bold"
+                                              Background="DimGray"
+                                              Foreground="GreenYellow" 
+                                              Content="Courses" 
+                                              Command="{Binding NavigateCommand}" 
+                                              CommandParameter="CoursesView"
+                                              Margin="0" HorizontalContentAlignment="Left"/>
+
+                </Grid>
+                <Grid Height="30">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    
+                    <Rectangle Fill="Salmon" Width="30"/>
+                    <Button Grid.Column="1"  Background="DimGray"
+                                              FontWeight="Bold"
+                                  Foreground="Salmon" 
+                                  HorizontalContentAlignment="Left"
+                                  Content="Students" 
+                                  Command="{Binding NavigateCommand}" 
+                                  CommandParameter="StudentsView" 
+                                  Margin="0"
+                            Padding="10,0"/>
+
+                </Grid>
+                <Grid Height="30">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Rectangle Fill="Aqua" Width="30"/>
+                    <Button Grid.Column="1"  Background="DimGray"
+                                              FontWeight="Bold"
+                                  Foreground="Aqua" 
+                                  HorizontalContentAlignment="Left"
+                                  Content="Departments" 
+                                  Command="{Binding NavigateCommand}" 
+                                  CommandParameter="DepartmentsView" 
+                                  Margin="0"
+                            Padding="10,0"/>
+
+                </Grid>
+                <Grid Height="30">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Rectangle Fill="HotPink" Width="30"/>
+                    <Button Grid.Column="1"  Background="DimGray"
+                                              FontWeight="Bold"
+                                  Foreground="HotPink" 
+                                  HorizontalContentAlignment="Left"
+                                  Content="Instructor" 
+                                  Command="{Binding NavigateCommand}" 
+                                  CommandParameter="InstructorView" 
+                                  Margin="0"
+                            Padding="10,0"/>
+
+                </Grid>
+            </StackPanel>
+            <ContentControl Grid.Column="1" prism:RegionManager.RegionName="MainRegion"/>
+
+
+        </Grid>
+    </Grid>
+</Window>
